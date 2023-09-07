@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "f55f63b8-f9ae-44db-877a-4a5a6fcb3305",
+		"name": "Teams REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28261215"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuario\": \"Naruto\",\n    \"contrasena\": \"asd.456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuarios/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/usuarios/64e21e63973dc9a970eec90e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"64e21e63973dc9a970eec90e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener lista conversaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/usuarios/64e21e63973dc9a970eec90e/conversaciones",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"64e21e63973dc9a970eec90e",
+						"conversaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener mensajes de una conversación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/conversaciones/64e22914973dc9a970eec92c/mensajes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"conversaciones",
+						"64e22914973dc9a970eec92c",
+						"mensajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener mensajes por grupo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/grupos/64e22903973dc9a970eec929/mensajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"grupos",
+						"64e22903973dc9a970eec929",
+						"mensajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener miembros de un grupo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/grupos/64e22903973dc9a970eec929/miembros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"grupos",
+						"64e22903973dc9a970eec929",
+						"miembros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo mensaje para usuario particular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_idEmisor\": \"64e21e63973dc9a970eec90f\",\n    \"_idReceptor\": \"64e21e63973dc9a970eec90e\",\n    \"emisor\": 2,\n    \"receptor\": 1,\n    \"mensaje\": \"Prueba desde postman\",\n    \"hora\": \"10:11 PM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/conversaciones/64e22914973dc9a970eec92c/agregar-mensajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"conversaciones",
+						"64e22914973dc9a970eec92c",
+						"agregar-mensajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo mensaje para grupo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"_idEmisor\": \"64e21e63973dc9a970eec90f\",\n    \"emisor\": 2,\n    \"receptor\": null,\n    \"mensaje\": \"Prueba desde postman\",\n    \"hora\": \"10:11 PM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/grupos/64e22903973dc9a970eec929/agregar-mensaje",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"grupos",
+						"64e22903973dc9a970eec929",
+						"agregar-mensaje"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar miembro grupo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"64e21e63973dc9a970eec911\",\r\n    \"id\": \"4\",\r\n    \"nombre\": \"Tsunade\",\r\n    \"imagen\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/grupos/64e22903973dc9a970eec929/agregar-miembro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"grupos",
+						"64e22903973dc9a970eec929",
+						"agregar-miembro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar id mongo a lista conversaciones en usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_idConversacion\": \"64e22914973dc9a970eec92d\",\r\n    \"_idDestinatario\": null,\r\n    \"_idGrupo\": \"64e22903973dc9a970eec929\", \r\n    \"idConversacion\": 1,\r\n    \"idDestinatario\": 2,\r\n    \"idGrupo\": null,\r\n    \"tipo\": \"individual\",\r\n    \"ultimoMensaje\": \"Lorem ipsum dolor\",\r\n    \"horaUltimoMensaje\": \"10:11 PM\",\r\n    \"nombreDestinatario\": \"Sakura\",\r\n    \"imagenDestinatario\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuarios/64e21e63973dc9a970eec90e/conversaciones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"64e21e63973dc9a970eec90e",
+						"conversaciones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener llamadas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/llamadas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"llamadas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

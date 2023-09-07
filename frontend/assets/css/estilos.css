@@ -1,0 +1,289 @@
+body, .container{
+    height: 97vh;
+    background-color: black;
+    color: white;
+    /* color:#fa4051; */
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+#img-teams{
+    height: 250px;
+}
+
+.login-div{
+    height: 40px;
+    width: 280px;
+    border-radius: 15px;
+    background-color: #2b2b2d;
+    border: 1px solid white;
+    padding-left:20px;
+}
+
+#login div{
+    margin: 10px;
+}
+
+.boton-login{
+    height: 40px;
+    width: 290px;
+    border-radius: 15px;
+    color: white;
+    background-color: #5b5fc1;
+}
+
+#contenedor-mensajeria{
+    display: none;
+}
+
+
+#nav-usuario{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#img-navSuperior{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #5b5fc1;
+    color:white;
+}
+
+#nombre{
+    width: 230px;
+    height: 50px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+#users{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 30px;
+}
+
+
+#search1{
+    height: 50px;
+    border-radius: 20px;
+    background-color: #1b1a1a;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#search2{
+    height: 50px;
+    border-radius: 20px;
+    background-color: #1b1a1a;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#cambiar{
+    margin: 10px;
+}
+
+#mensajes{
+    height: 690px;
+}
+
+#cont-mensajes{
+    height: 120px;
+    display: flex;
+    /* flex-direction: column; */
+    padding-top: 15px;
+}
+
+#mensajeria-imgUsuarios{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: #5b5fc1;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#mensajeria{
+    height: 80px;
+    width: 235px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+
+#hora{
+    height: 30px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+#nav-inferior{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-inf-div{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    font-size: 25px;
+}
+
+#contenedor-chat{
+    display: none;
+}
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    background-color: #1b1a1a;
+
+}
+
+#nav div{
+    margin-left: 20px;
+}
+
+#chat-nav{
+    position: absolute;
+    top: 0.001%;
+    /* top: 90%; */
+    width: 100%;
+}
+
+#avion{
+    position: absolute;
+    top: 95%;
+    left: 86%;
+}
+
+#prueba{
+overflow: scroll;
+height: 90%;
+}
+
+#chat-mensajes{
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* overflow: scroll; */
+    /* margin-top: 60px; */
+}
+
+#chat-escribirMensaje{
+    /* height: 70px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+/* 
+#chat-escribirMensaje div {
+    margin: 10px;
+} */
+
+#msj-recibido{
+    width: 350px;
+    display: flex;
+    border-radius: 20px;
+}
+
+#recibidos{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+}
+
+#msj-enviado{
+    width: 300px;
+    display: flex;
+    margin-left: 100px;
+    padding: 5px;
+    background-color: #5b5fc1;
+    border-radius: 10px;
+}
+
+.input-mensaje{
+    width: 330px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #1b1a1a;
+    color: white;
+    position: absolute;
+    top: 94%;
+    right: 17%;
+    padding-left: 12px;
+}
+
+#chat-mensajes p{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icon1{
+    color: gray;
+    font-size: 30px;
+}
+
+#texto1{
+    display: flex;
+}
+
+#texto1 div{
+    margin: 5px;
+    
+}
+
+#llamadas{
+    display: none;
+    height: 650px;
+}
+
+#cambiar1{
+    height: 500px;
+}
+
+#llamada{
+    height: 710px;
+}
+
+#circulito{
+    height: 20px;
+    width: 20px;
+    border-radius: 30px;
+    margin: -32px;
+
+}

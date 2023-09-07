@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "64e22914973dc9a970eec92c"
+  },
+  "id": 1,
+  "emisor": {
+    "_id": "64e21e63973dc9a970eec90e",
+    "id": 1,
+    "nombre": "Naruto",
+    "imagen": ""
+  },
+  "receptor": {
+    "_id": "64e21e63973dc9a970eec911",
+    "id": 4,
+    "nombre": "Tsunade",
+    "imagen": ""
+  },
+  "ultimoMensaje": "Lorem Ipsum",
+  "fechaConversacionn": "12/12/2021",
+  "mensajes": [
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec90f",
+      "emisor": 1,
+      "receptor": 2,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:11 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90f",
+      "_idReceptor": "64e21e63973dc9a970eec90e",
+      "emisor": 2,
+      "receptor": 1,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:12 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec90f",
+      "emisor": 1,
+      "receptor": 2,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:13 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90f",
+      "_idReceptor": "64e21e63973dc9a970eec90e",
+      "emisor": 2,
+      "receptor": 1,
+      "mensaje": "Prueba desde postman",
+      "hora": "10:11 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90f",
+      "_idReceptor": "64e21e63973dc9a970eec90e",
+      "emisor": 2,
+      "receptor": 1,
+      "mensaje": "Prueba desde postman ERICK",
+      "hora": "10:11 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec90f",
+      "emisor": 1,
+      "receptor": "2",
+      "mensaje": "Hola",
+      "hora": "10:11 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec90f",
+      "emisor": 1,
+      "receptor": "2",
+      "mensaje": "Holaaa",
+      "hora": "10:11 PM"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64e22914973dc9a970eec92d"
+  },
+  "id": 3,
+  "emisor": {
+    "_id": "64e21e63973dc9a970eec90e",
+    "id": 1,
+    "nombre": "Naruto",
+    "imagen": ""
+  },
+  "receptor": {
+    "_id": "64e21e63973dc9a970eec913",
+    "id": 6,
+    "nombre": "Tobi",
+    "imagen": ""
+  },
+  "ultimoMensaje": "Lorem Ipsum",
+  "fechaConversacionn": "12/12/2021",
+  "mensajes": [
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec913",
+      "emisor": 1,
+      "receptor": 6,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:11 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec913",
+      "emisor": 1,
+      "receptor": 6,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:12 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec913",
+      "_idReceptor": "64e21e63973dc9a970eec90e",
+      "emisor": 6,
+      "receptor": 1,
+      "mensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "hora": "10:13 PM"
+    },
+    {
+      "_idEmisor": "64e21e63973dc9a970eec90e",
+      "_idReceptor": "64e21e63973dc9a970eec90e",
+      "emisor": 1,
+      "receptor": 2,
+      "mensaje": "Holaa",
+      "hora": "4:15 PM"
+    }
+  ]
+}]

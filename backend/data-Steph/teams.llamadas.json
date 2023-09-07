@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "64e28a8c07fdce4a8388579a"
+  },
+  "id": 1,
+  "nombre": "Tobi",
+  "_idUsuario": "64e21e63973dc9a970eec913",
+  "imagen": "https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/12602-635813231.jpg",
+  "flecha": true,
+  "duarion": "10min",
+  "hora": "10:35"
+},
+{
+  "_id": {
+    "$oid": "64e28a8c07fdce4a8388579b"
+  },
+  "id": 2,
+  "_idUsuario": "64e21e63973dc9a970eec913",
+  "nombre": "Orochimaru",
+  "imagen": "https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-101606445.jpg",
+  "flecha": false,
+  "duarion": "10min",
+  "hora": "10:35"
+}]

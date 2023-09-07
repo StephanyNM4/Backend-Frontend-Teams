@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bc58745714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="contenedor-principal">
+        <div id="login">
+            <div><img id="img-teams" src="../logo.png" alt=""></div>
+            <div><input id="user" class="login-div" type="text" placeholder="User"></div>
+            <div><input id="password" class="login-div" type="password" placeholder="Password"></div>
+            <div><button onclick="mostrarContenedorMensajeria()" class="boton-login">Login</button></div>
+        </div>
+
+
+        <div id="contenedor-mensajeria">
+            <div id="cambiar">
+                <div id="nav-usuario">
+                    <div id="usuario"><img id="img-navSuperior" src=
+                        "https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-1946301974.jpg" alt=""></div>
+                    <div id="nombre"><h4>nombre</h4></div>
+                    <div id="users"><i class=" fa-solid fa-circle-user" style="color: #ffffff;"></i></div>
+                </div>
+    
+                <div><input id="search1" type="text" placeholder="Search"></div>
+    
+                <div id="mensajes">
+    
+                    <div id="cont-mensajes">
+                        <div id="msj3"><img id="mensajeria-imgUsuarios" src="" alt=""></div>
+                        <div id="mensajeria">
+                            <div id="mensajeria-nombres"><h4>Sakura</h4></div>
+                            <div id="mensajeria-texto"><p>Lorem ipsum</p></div>
+                        </div>
+                        <div id="hora">
+                            <div>14:30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div id="navegador">
+                <div id="nav-inferior">
+                    <div class="nav-inf-div">
+                        <div id="msj" onclick="regresarMensajeria()" class="icon"><i class="fa-solid fa-comment-dots"></i></div>
+                        <div id="text-icon">Chat</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div id="text-icon">Users</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div onclick="mostrarLlamadas()" class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div id="text-icon">Calls</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div class="icon"><i class="icon-3puntos fa-solid fa-ellipsis-vertical"></i></div>
+                        <div id="text-icon">More</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+            
+            
+        
+
+
+
+        <div id="contenedor-chat">
+            <div id="cambiar2">
+            </div>
+        </div>
+
+
+        <div id="llamadas">
+            <div id="nav" style="background-color: black;">
+                <div onclick="regresarMensajeria()" id="chat-flecha"><i class="icon fa-solid fa-chevron-left"></i></div>
+                <div id="usuario"><img id="img-navSuperior" src=
+                    "https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-1946301974.jpg" alt=""></div>
+                <div id="nombre"><h4>nombre</h4></div>
+            </div>
+
+            <div><input id="search2" type="text" placeholder="Search"></div>
+
+            <div id="llamada">
+                <div id="cont-mensajes">
+                    <div id=""><img id="mensajeria-imgUsuarios" src="https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-1946301974.jpg" alt=""></div>
+                    <div id="mensajeria">
+                        <div id="mensajeria-nombres"><h4>Sakura</h4></div>
+                        <div id="texto1">
+                            <div><i class="icon1 fa-sharp fa-solid fa-arrow-turn-up"></i></div>
+                            <div id="mensajeria-texto"><p>30min</p></div>
+                        </div>
+                    </div>
+                    <div id="hora">
+                        <div>10:11</div>
+                        <i class="icon1 fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+                <div id="cont-mensajes">
+                    <div id=""><img id="mensajeria-imgUsuarios" src="https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-1946301974.jpg" alt=""></div>
+                    <div id="mensajeria">
+                        <div id="mensajeria-nombres"><h4>Sakura</h4></div>
+                        <div id="texto1">
+                            <div><i class="icon1 fa-sharp fa-solid fa-arrow-turn-down"></i></div>
+                            <div id="mensajeria-texto"><p>30min</p></div>
+                        </div>
+                    </div>
+                    <div id="hora">
+                        <div>10:11</div>
+                        <i class="icon1 fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+                <div id="cont-mensajes">
+                    <div id=""><img id="mensajeria-imgUsuarios" src="https://ami.animecharactersdatabase.com/uploads/chars/thumbs/200/5688-1946301974.jpg" alt=""></div>
+                    <div id="mensajeria">
+                        <div id="mensajeria-nombres"><h4>Sakura</h4></div>
+                        <div id="texto1">
+                            <div><i class="icon1 fa-sharp fa-solid fa-arrow-turn-up"></i></div>
+                            <div id="mensajeria-texto"><p>30min</p></div>
+                        </div>
+                    </div>
+                    <div id="hora">
+                        <div>10:11</div>
+                        <i class="icon1 fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="navegador">
+                <div id="nav-inferior">
+                    <div class="nav-inf-div">
+                        <div onclick="regresarMensajeria()" class="icon"><i class="fa-solid fa-comment-dots"></i></div>
+                        <div id="text-icon">Chat</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div id="text-icon">Users</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div id="calls" onclick="mostrarLlamadas()" class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div id="text-icon">Calls</div>
+                    </div>
+                    <div class="nav-inf-div">
+                        <div class="icon"><i class="icon-3puntos fa-solid fa-ellipsis-vertical"></i></div>
+                        <div id="text-icon">More</div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="assets/js/controlador.js"></script>
+</body>
+</html>
